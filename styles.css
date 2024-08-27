@@ -6,11 +6,12 @@ html, body {
 body {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: stretch;
     min-width: 550px;
+    min-height: 550px;
 }
 
-.content {
+#content {
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -19,22 +20,21 @@ body {
     align-items: center;
 }
 
-#container {
+#grid-container {
     width: 550px;
     height: 550px;
-    display: flex;
-    
+    display: flex;    
 }
 
-.pixel {
-    box-sizing: border-box;
-    border: 1px solid black;
+.pixel-border {
+    border: 1px solid rgba(128, 128, 128, 0.5);
 }
 
 #button-container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    height: 65%;
 }
