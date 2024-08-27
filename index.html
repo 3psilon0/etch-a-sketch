@@ -8,12 +8,22 @@
     <title>Etch-a-Sketch</title>
   </head>
   <body>
-    <div class="content">
-      <div id="container"></div>
+    <div id="content">
+      <div
+        id="grid-container"
+        ondragstart="return false;"
+        ondrop="return false;"
+      ></div>
       <div id="button-container">
         <h1>Etch a Sketch</h1>
-        <input type="range" min="1" max="100" value="16" id="grid-slider" />
-        <!-- <input type="color" value="0xFFFFFF" id="color-picker-button" /> -->
+        <div id="grid-slider-container">
+          <input type="range" min="1" max="64" value="16" id="grid-slider" />
+        </div>
+        <input type="color" value="black" id="color-pick-button" />
+        <button class="default-button" id="clear-grid-btn">Clear Grid</button>
+        <button class="default-btn" id="toggle-lines-btn">
+          Toggle Gridlines
+        </button>
       </div>
     </div>
   </body>
