@@ -1,30 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./styles.css" />
-    <script src="./script.js" defer></script>
-    <title>Etch-a-Sketch</title>
-  </head>
-  <body>
-    <div id="content">
-      <div
-        id="grid-container"
-        ondragstart="return false;"
-        ondrop="return false;"
-      ></div>
-      <div id="button-container">
-        <h1>Etch a Sketch</h1>
-        <div id="grid-slider-container">
-          <input type="range" min="1" max="64" value="16" id="grid-slider" />
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./styles.css" />
+        <script src="./script.js" defer></script>
+        <title>✏️ Etch a Sketch ✏️</title>
+    </head>
+    <body>
+        <div id="content">
+            <div
+                id="grid-container"
+                ondragstart="return false;"
+                ondrop="return false;"
+            ></div>
+            <div id="button-container">
+                <h1>Etch a Sketch</h1>
+                <div id="grid-slider-container">
+                    <input
+                        type="range"
+                        min="1"
+                        max="100"
+                        value="16"
+                        id="grid-slider"
+                    />
+                </div>
+                <div class="color-input-container">
+                    <label for="color-pick-btn">Pen Color:</label>
+                    <input type="color" value="black" id="color-pick-btn" />
+                </div>
+                <button class="default-btn" id="clear-grid-btn">
+                    Clear Grid
+                </button>
+                <button class="default-btn" id="toggle-lines-btn">
+                    Toggle Gridlines
+                </button>
+                <button class="default-btn" id="toggle-eraser-btn">
+                    Toggle Eraser
+                </button>
+                <button class="default-btn" id="toggle-rainbow-btn">
+                    Toggle Rainbow Mode
+                </button>
+                <button class="default-btn" id="toggle-darken-btn">
+                    Toggle Darken
+                </button>
+            </div>
         </div>
-        <input type="color" value="black" id="color-pick-button" />
-        <button class="default-button" id="clear-grid-btn">Clear Grid</button>
-        <button class="default-btn" id="toggle-lines-btn">
-          Toggle Gridlines
-        </button>
-      </div>
-    </div>
-  </body>
+    </body>
 </html>
