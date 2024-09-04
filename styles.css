@@ -53,7 +53,7 @@ body {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    height: 65%;
+    height: auto;
 }
 
 #main-title {
@@ -76,6 +76,7 @@ body {
     background: none;
     color: white;
     padding: 5px;
+    margin: 5px;
 }
 
 .default-btn:hover {
