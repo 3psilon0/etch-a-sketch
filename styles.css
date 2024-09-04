@@ -71,10 +71,10 @@ body {
 }
 
 .default-btn {
-    border: 2px solid white;
+    border: 2px solid wheat;
     border-radius: 5px;
     background: none;
-    color: white;
+    color: wheat;
     padding: 5px;
     margin: 5px;
 }
@@ -82,7 +82,7 @@ body {
 .default-btn:hover {
     cursor: pointer;
     border: 2px solid black;
-    background-color: white;
+    background-color: wheat;
     color: black;
 }
 
