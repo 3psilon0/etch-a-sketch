@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="./styles.css" />
         <script src="./script.js" defer></script>
-        <title>✏️ Etch a Sketch ✏️</title>
+        <title>Etch a Sketch ✏️</title>
     </head>
     <body>
         <div id="content">
@@ -15,8 +15,9 @@
                 ondrop="return false;"
             ></div>
             <div id="button-container">
-                <h1>Etch a Sketch</h1>
+                <h1 id="main-title">Etch a Sketch</h1>
                 <div id="grid-slider-container">
+                    <label for="grid-slider">Adjust Grid Size:<br /></label>
                     <input
                         type="range"
                         min="1"
@@ -40,9 +41,6 @@
                 </button>
                 <button class="default-btn" id="toggle-rainbow-btn">
                     Toggle Rainbow Mode
-                </button>
-                <button class="default-btn" id="toggle-darken-btn">
-                    Toggle Darken
                 </button>
             </div>
         </div>
